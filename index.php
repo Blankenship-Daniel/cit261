@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>cit261</title>
-    </head>
+<?php require_once('layouts/header.php') ?>
     <body>
         <h1>Hello CIT 261</h1>
     </body>
-</html>
+<?php require_once('layouts/footer.php') ?>
