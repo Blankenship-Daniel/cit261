@@ -1,4 +1,3 @@
-(function () {
     function ajax(url, callback) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function(){
@@ -15,4 +14,3 @@
             console.log(data);
         });
     }
-})();
