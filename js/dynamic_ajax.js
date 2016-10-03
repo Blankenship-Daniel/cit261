@@ -13,13 +13,7 @@ function ajax(url, callback) {
 
 function requestData(endpoint) {
     var root = 'https://api.github.com';
-    console.log(endpoint);
     ajax(root + endpoint, function(data) {
-        var output = document.getElementById('output').innerHTML;
-        if (data === 404) {
-            output = 'Sorry! We couldn\'t find that repo';
-        } else {
-            output = data;
-        }
+        document.getElementById('output').innerHTML = data;
     });
 }
