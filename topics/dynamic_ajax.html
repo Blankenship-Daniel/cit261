@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cit261</title>
+    </head>
+    <body>
+        <h1>Basic Ajax Example</h1>
+        <input id="repoName" type="text" placeholder="ADTs">
+        <button onclick="requestData('/repos/Blankenship-Daniel/' + document.getElementById('repoName').value)">Get Data</button>
+        <pre>
+            <div id="output"></div>
+        </pre>
+    </body>
+    <script src="../js/dynamic_ajax.js"></script>
+</html>
