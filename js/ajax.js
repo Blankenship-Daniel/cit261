@@ -6,6 +6,8 @@ function ajax(url, callback) {
         }
     }
     xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader('Access-Control-Allow-Origin', 'http://jsonplaceholder.typicode.com');
+    xmlhttp.setRequestHeader('Content-type', 'application/json');
     xmlhttp.send();
 }
 
