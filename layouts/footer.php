@@ -1,2 +1,2 @@
-<script src="/js/marsweather_api.js"></script>
+<script src="/js/ajax.js"></script>
 </html>
