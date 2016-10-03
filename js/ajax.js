@@ -9,8 +9,9 @@ function ajax(url, callback) {
     xmlhttp.send();
 }
 
-function requestData(url) {
-    ajax(url, function(data) {
+function requestData(endpoint) {
+    var root = 'http://jsonplaceholder.typicode.com/';
+    ajax(root + endpoint, function(data) {
         var json = JSON.parse(data);
         console.log(json.data.title);
     });
