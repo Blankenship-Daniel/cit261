@@ -12,6 +12,6 @@ function ajax(url, callback) {
 function requestData(endpoint) {
     var root = 'https://api.github.com';
     ajax(root + endpoint, function(data) {
-        console.log(data);
+        document.getElementById('output').innerHTML = data;
     });
 }
