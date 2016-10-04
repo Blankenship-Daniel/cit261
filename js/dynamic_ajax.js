@@ -24,7 +24,10 @@ function populateDropdown() {
         var json = JSON.parse(data);
 
         for (var i = 0; i < json.length; i++) {
-            console.log(json[i].name);
+            var opt = document.createElement('option');
+            opt.value = json[i].name;
+            opt.innerHTML = json[i].name;
+            select.appendChild(opt);
         }
     });
 }
