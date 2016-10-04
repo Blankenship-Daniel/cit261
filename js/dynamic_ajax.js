@@ -19,7 +19,7 @@ function requestData(endpoint) {
 }
 
 function populateDropdown() {
-    ajax('http://api.github.com/users/Blankenship-Daniel/repos', function(data) {
+    ajax('https://api.github.com/users/Blankenship-Daniel/repos', function(data) {
         var select = document.getElementById('repos');
         for (var i = 0; i < data.length; i++) {
             console.log(data[i].name);
