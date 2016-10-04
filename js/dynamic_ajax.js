@@ -22,7 +22,7 @@ function populateDropdown() {
     ajax('https://api.github.com/users/Blankenship-Daniel/repos', function(data) {
         var select = document.getElementById('repos');
 
-        console.log(data);
+        console.log(JSON.parse(data));
 
         // for (var i = 0; i < data.length; i++) {
         //     console.log(data[i].name);
