@@ -17,3 +17,16 @@ function requestData(endpoint) {
         document.getElementById('output').innerHTML = data;
     });
 }
+
+function populateDropdown() {
+    ajax('http://api.github.com/users/Blankenship-Daniel/repos', function(data) {
+        var select = document.getElementById('repos');
+        for (var i = 0; i < data.length; i++) {
+            console.log(data[i].name);
+        }
+    });
+}
+
+window.onload = function() {
+    populateDropdown();
+};
