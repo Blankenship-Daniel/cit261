@@ -21,9 +21,12 @@ function requestData(endpoint) {
 function populateDropdown() {
     ajax('https://api.github.com/users/Blankenship-Daniel/repos', function(data) {
         var select = document.getElementById('repos');
-        for (var i = 0; i < data.length; i++) {
-            console.log(data[i].name);
-        }
+
+        console.log(data);
+
+        // for (var i = 0; i < data.length; i++) {
+        //     console.log(data[i].name);
+        // }
     });
 }
 
