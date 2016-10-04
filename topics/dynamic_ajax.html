@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Dynamic Ajax Example</h1>
-        <select id="repos">
+        <select id="repos" onchange="requestData('/repos/Blankenship-Daniel/' + this.value)">
         </select>
 
         <pre>
