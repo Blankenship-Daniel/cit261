@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cit261</title>
+        <style>
+            html, body {
+                margin: 0;
+                height: 100%;
+                font-family: 'Arial', sans-serif;
+            }
+
+            #content_wrapper {
+                position: relative;
+                min-height: 100%;
+                padding: 1em 1em 1em calc(50px + 1em);
+            }
+
+            .toolbar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50px;
+                height: 100%;
+                background: #9E9E9E;
+                overflow: hidden;
+
+                -webkit-transition: width 1s, background 2s;
+                transition: width 1s, background 2s;
+            }
+
+            .toolbar_content {
+                min-width: 100px;
+                padding: 1em 1em 1em calc(50px + 1em);
+            }
+
+            .toolbar a {
+                text-decoration: none;
+            }
+
+            .toolbar ul {
+                padding-left: 1em;
+            }
+
+            .toolbar:hover {
+                cursor: pointer;
+                background: #E0E0E0;
+                width: 300px;
+
+                -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+            }
+
+            nav {
+                background: #3F51B5;
+                padding: 1em;
+                -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+        </nav>
+        <div id="content_wrapper">
+            <div class="toolbar">
+                <div class="toolbar_content">
+                    <h1>Toolbar</h1>
+                    <ul>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                        <li><a href="#">Toolbar Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1>CSS3 Transitions</h1>
+            <p>This is a simple example of CSS3 transitions. Hover over the left toolbar
+                to start the transition.</p>
+        </div>
+    </body>
+</html>

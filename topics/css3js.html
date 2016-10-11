@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cit261</title>
+        <style>
+            html, body {
+                font-family: 'Arial', sans-serif;
+            }
+
+            .container {
+                position: relative;
+                width: 100%;
+                padding: 1em;
+            }
+
+            #red_box {
+                margin: 1em;
+                width: 100px;
+                height: 100px;
+                background: red;
+
+                -webkit-transition: background 1s ease;
+                transition: background 1s ease;
+            }
+
+            #red_box_button {
+                margin-left: 1em;
+            }
+
+            #red_box.change_box {
+                background: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Triggering CSS3 Transitions with JavaScript</h1>
+
+        <div class="container">
+            <div id="red_box"></div>
+            <button id="red_box_button">Change Color</button>
+        </div>
+    </body>
+    <script src="../js/css3.js"></script>
+</html>

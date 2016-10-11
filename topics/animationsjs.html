@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cit261</title>
+        <style>
+            html, body {
+                font-family: 'Arial', sans-serif;
+                height: 100%;
+                margin: 0;
+            }
+
+            .container {
+                height: 100%;
+                padding: 1em;
+            }
+
+            .invertContainer {
+                animation: pulse 5s forwards;
+            }
+
+            .content {
+                min-height: 100%;
+                max-width: 980px;
+                margin: 0 auto;
+            }
+
+            .box {
+                background: #fff;
+                height: 50px;
+                width: 50px;
+                border: 1px solid;
+            }
+
+            .toCircle {
+                animation: toCircle 5s forwards;
+            }
+
+            .buttons_wrapper {
+                margin: 1em 0;
+            }
+
+            @keyframes toCircle {
+                0% {
+                    border-radius: 0%;
+                }
+
+                100% {
+                    border-radius: 50%;
+                }
+            }
+
+            @keyframes pulse {
+                0% {
+                    color: currentColor;
+                    background: #fff;
+                }
+
+                100% {
+                    color: #fff;
+                    background: #3F51B5;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>CSS3 Animations</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque rerum voluptas expedita numquam officia nobis accusamus itaque veniam, consequatur quis, modi, fugiat quia dignissimos consequuntur delectus impedit quidem minima voluptatem!</p>
+                <div class="box"></div>
+                <div class="buttons_wrapper">
+                    <button onclick="invertSite(document.getElementsByClassName('container')[0], 'invertContainer')">Invert Site</button>
+                    <button onclick="squareToCircle(document.getElementsByClassName('box')[0], 'toCircle')">Square to Circle</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/animations.js"></script>
+</html>

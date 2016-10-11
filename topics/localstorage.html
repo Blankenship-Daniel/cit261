@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cit261</title>
+        <style>
+            html, body {
+                font-family: 'Arial', sans-serif;
+            }
+
+            #shopping_cart {
+                background: #CFD8DC;
+                min-width: 200px;
+                min-height: 200px;
+                padding: 1em;
+                margin: 1em;
+            }
+
+            #add_to_shopping_cart {
+                margin: 1em;
+            }
+
+            #add_to_shopping_cart fieldset {
+                margin: 1em 0;
+            }
+
+            #storage_code_snippet {
+                margin: 0 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Local Storage</h1>
+        <div id="shopping_cart">
+            <h3>Shopping Cart</h3>
+            <table id="shopping_cart_table" border="1">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Data</th>
+                    </tr>
+                </thead>
+                <tbody id="shopping_cart_data">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="add_to_shopping_cart">
+            <fieldset>
+                <label for="product_name">Product Name: </label>
+                <input name="product_name" type="text" id="product_name">
+            </fieldset>
+
+            <fieldset>
+                <label for="product_price">Product Price: </label>
+                <input name="product_price" type="text" id="product_price">
+            </fieldset>
+
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+        <pre id="storage_code_snippet"></pre>
+    </body>
+    <script src="../js/localstorage.js"></script>
+</html>
