@@ -3,6 +3,8 @@ function ajax(url, callback) {
     xmlhttp.onreadystatechange = function(){
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
             callback(xmlhttp.responseText);
+        } else {
+            // handle the request
         }
     }
     xmlhttp.open("GET", url, true);
